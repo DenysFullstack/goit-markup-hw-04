@@ -227,7 +227,7 @@ p {
 }
 
 .feature-item {
-    display: block;
+    display: flex;
     align-items: center;
     justify-content: center;
     background: #F4F4FD;
