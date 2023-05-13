@@ -7,6 +7,7 @@
     --type-of-app-color: #2E2F42;
     --app-color: #434455;
     --background-color: #2E2F42;
+    --customer-list-link-color: #8E8F99;
 }
 
 button {
@@ -77,6 +78,7 @@ body {
     padding-top: 24px;
     padding-bottom: 24px;
     border-bottom: 1px solid #e7e9fc;
+    box-shadow:0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08)
 }
 
 .page-nav {
@@ -157,6 +159,7 @@ body {
             rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
     background-repeat: no-repeat;
     background-position: center;
+    background-size: cover;
 }
 
 .hero {
@@ -202,6 +205,15 @@ p {
 }
 
 .principles {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 112px;
+    border-radius: 4px;
+    margin-bottom: 8px;
+}
+
+.principles-of-work {
     display: none;
 }
 
@@ -311,7 +323,7 @@ p {
 }
 
 .member-data {
-    padding: 32px 16px;
+    padding: 32px 0;
 }
 
 .member {
@@ -325,12 +337,12 @@ p {
 
 .social-list {
     justify-content: center;
-    column-gap: 24px;
+    gap: 24px;
 }
 
 .social-list-link:hover,
 .social-list-link:focus {
-    background-color: var(--body-color);
+    background-color: #404bbf; 
 }
 
 .social-list-icon {
@@ -360,20 +372,20 @@ p {
     margin-bottom: 72px;
     font-weight: 700;
     font-size: 36px;
-    line-height: 40px;
+    line-height: 1,1;
     text-align: center;
     letter-spacing: 0.02em;
     text-transform: capitalize;
     color: #2E2F42;
 }
 
-.customers-container {
+.our-customers {
     padding-top: 120px;
     padding-bottom: 120px;
 }
 
 .customers-list {
-    column-gap: 24px;
+    gap: 24px;
 }
 
 .customer-list-link:hover,
@@ -395,10 +407,11 @@ p {
     justify-content: center;
     border: 1px solid #8E8F99;
     border-radius: 4px;
+    color: var(--customer-list-link-color)
 }
 
 .customer-list-icon {
-    fill: #8E8F99;
+    fill: currentColor;
 }
 
 /* Footer */
@@ -412,6 +425,7 @@ p {
 .footer-container {
     display: flex;
     justify-content: start;
+    align-items: baseline;
 }
 
 .footer-logo-text {
@@ -444,11 +458,26 @@ p {
     margin-bottom: 16px;
 }
 
-.social-list-footer {
-    column-gap: 16px;
+.footer-list-link:hover,
+.footer-list-link:focus {
+    background-color: #31d0aa;
 }
 
-/* Second page */
+.footer-list-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: #4d5ae5;
+    border-radius: 50%;
+}
+
+.social-list-footer {
+    gap: 16px;
+}
+
+/* Portfolio page */
 
 .types {
     padding: 96px 0 120px;
@@ -463,6 +492,7 @@ p {
 .second-page-button:hover,
 .second-page-button:focus {
     border: 1px solid transparent;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .second-page-button {
@@ -507,8 +537,13 @@ p {
     row-gap: 48px;
 }
 
-.application-link:hover {
-    box-shadow: #8E8F99;
+.application-link:hover,
+.application-link:focus {
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
+.application-link {
+    display: block;
 }
 
 .name-category-app {
