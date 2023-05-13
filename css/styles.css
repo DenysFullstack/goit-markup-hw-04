@@ -227,8 +227,14 @@ p {
 }
 
 .feature-item {
+    display: block;
+    align-items: center;
+    justify-content: center;
     background: #F4F4FD;
     text-align: center;
+    height: 112px;
+    border-radius: 4px;
+    margin-bottom: 8px;
     padding-top: 24px;
     padding-bottom: 24px;
 }
@@ -372,7 +378,7 @@ p {
     margin-bottom: 72px;
     font-weight: 700;
     font-size: 36px;
-    line-height: 1,1;
+    line-height: 1.1;
     text-align: center;
     letter-spacing: 0.02em;
     text-transform: capitalize;
@@ -481,6 +487,10 @@ p {
 
 .types {
     padding: 96px 0 120px;
+}
+
+.secondary-page-text {
+    display: none;
 }
 
 .secondary-page-menu {
